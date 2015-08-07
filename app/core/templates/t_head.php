@@ -31,16 +31,17 @@
 			
 			$(this).colorbox({});
 		});
-		$('.sk_panel,.sk_password').click(function(e){
+		$('.sk_panel,.sk_password,.sk_add_product').click(function(e){
 			
 			$(this).colorbox({
 			iframe: true,
 			top: '10px',
 			width: '600px',
-			height: '600px',
+			height: '700px',
 			});
 			
 		});
+		
 	});
 	
 </script>

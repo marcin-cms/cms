@@ -12,7 +12,7 @@
 		<ul class="nav nav-tabs nav-stacked nav-color">
 			<li><a href="<?php SITE_PATH ?>../panel/index.php">Start</a></li>
 			<li><a href="<?php SITE_PATH ?>../settings/password.php">Zmień hasło</a></li>
-			<li><a href="<?php SITE_PATH ?>../panel/index.php">Użytkownicy</a></li>
+			<li><a href="<?php SITE_PATH ?>../add-product/add-product.php">Dodaj produkt</a></li>
 			<li><a href="<?php SITE_PATH ?>../panel/index.php">Opcje</a></li>
 		</ul>	
 	</div>

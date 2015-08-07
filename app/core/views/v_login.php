@@ -12,7 +12,7 @@
 			
 			$.ajax({
 				type: "POST",
-				url: "http://marcinwitek.com/cms/app/login.php",
+				url: "<?php echo SITE_PATH; ?>app/login.php",
 				data: dataString,
 				cache: false,
 				success: function(html){

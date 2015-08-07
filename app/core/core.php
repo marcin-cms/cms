@@ -19,12 +19,14 @@ class SK_Core{
 		include(APP_PATH . "core/models/m_auth.php");
 		$this->Auth = new Auth();
 		
-		/* obiekt cms */
+		/* obiekty produtk-list */
 		
-		include(APP_PATH . "cms/models/m_cms.php");
-		$this->Cms = new Cms();
-		
-		  
+		include(APP_PATH . "product-list/models/m_product_list_title.php");
+		$this->Product_list_title = new Product_list_title();
+		include(APP_PATH . "product-list/models/m_product_list_description.php");
+		$this->Product_list_description = new Product_list_description();
+		include(APP_PATH . "product-list/models/m_product_list_price.php");
+		$this->Product_list_price = new Product_list_price();
 		 
 		 /*  start sesji */
 		
@@ -51,6 +53,9 @@ class SK_Core{
 		if($this->Auth->checkLoginStatus() == TRUE){
 			include(APP_PATH . "core/templates/t_toolbar.php");
 		}
+	}
+	function product_list(){
+		include(APP_PATH . "core/templates/t_product-list.php");
 	}
 	function login_link(){
 		if($this->Auth->checkLoginStatus() == TRUE){

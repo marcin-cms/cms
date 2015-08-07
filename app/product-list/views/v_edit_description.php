@@ -18,7 +18,7 @@
 			
 			$.ajax({
 				type: "POST",
-				url: "http://marcinwitek.com/cms/app/cms/edit.php",
+				url: "http://marcinwitek.com/cms/app/product-list/edit_description.php",
 				data: dataString,
 				cache: false,
 				success: function(html){
@@ -89,7 +89,7 @@ setTimeout(function() {tinyMCE.execCommand('mceAddControl',false,'field');},0)
 <div class="form-wrapper">
 	
 	<form action="" method="post" id="edit" class="well">
-		<legend>Edycja bloku: <i><?php echo $this->getData('block_id') ?></i></legend>
+		<legend>Id w bazie danych: <i><?php echo $this->getData('block_id') ?></i></legend>
 		<?php echo $this->getData('cms_field') ?>
 		<input type="hidden" id="type" value="<?php echo $this->getData('block_id') ?>" />
 		<hr />

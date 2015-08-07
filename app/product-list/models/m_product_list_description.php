@@ -1,11 +1,11 @@
 <?php
 	
-	class Cms {
+	class Product_list_description {
 		
 		private $content_types = array('wysiwyg','textarea','oneline');
 		private $SK;
 		
-		function Cms(){
+		function Product_list_description(){
 			global $SK;
 			$this->SK =& $SK;
 		}
@@ -24,15 +24,11 @@
 				return;
 			}
 			$content = $this->load_block($id);
-				if($content === FALSE){
-					$this->create_block($id);
-					$content = '';
-				}
 			if($this->SK->Auth->checkLoginStatus()){
 				$edit_start = '<div class="sk_edit">';
-				$edit_type = '<a class="sk_edit_type label label-inverse" href="'. SITE_PATH.'app/cms/edit.php?id='.$id.'&type='.
+				$edit_type = '<a class="sk_edit_type label label-inverse" href="'. SITE_PATH.'app/product-list/edit_description.php?id='.$id.'&type='.
 				$type. '">'.$type . '</a>';
-				$edit_link = '<a class="sk_edit_link" href="'.SITE_PATH. 'app/cms/edit.php?id='.$id.'&type='.
+				$edit_link = '<a class="sk_edit_link" href="'.SITE_PATH. 'app/product-list/edit_description.php?id='.$id.'&type='.
 				$type . '">Edytuj blok</a>';
 				$edit_end = '</div>';
 				
@@ -59,7 +55,7 @@
 		}
 		
 		function load_block($id){
-			if($stmt = $this->SK->Database->prepare("SELECT content From content WHERE id = ?")){
+			if($stmt = $this->SK->Database->prepare("SELECT description From products WHERE id = ?")){
 				$stmt->bind_param('s',$id);
 				$stmt->execute();
 				$stmt->store_result();
@@ -76,17 +72,10 @@
 			}
 			
 		}
-		function create_block($id){
-				if($stmt = $this->SK->Database->prepare("INSERT INTO content (id) VALUES (?)")){
-				$stmt->bind_param('s',$id);
-				$stmt->execute();
-				$stmt->close();
-			
-			}
-		}
+		
 		
 		function update_block($id,$content){
-				if($stmt = $this->SK->Database->prepare("UPDATE content SET content = ? WHERE id = ?")){
+				if($stmt = $this->SK->Database->prepare("UPDATE products SET description = ? WHERE id = ?")){
 				$stmt->bind_param('ss',$content, $id);
 				$stmt->execute();
 				$stmt->close();

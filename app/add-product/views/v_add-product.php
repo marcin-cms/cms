@@ -17,7 +17,7 @@
 		</ul>	
 	</div>
 	<div class="sk-panel-right">
-		<h2>Zmień hasło</h2>
+		<h2>Dodaj nowy Produkt</h2>
 		<form action="#" method="post" id="edit">
 			<div>
 			<?php
@@ -27,18 +27,19 @@
 			}
 			?>
 			</div>
-			<label for="oldpass">Stare hasło:*</label>
-			<input type="password" name="oldpass" id="oldpass"  value="<?php echo $this->getData('oldpass'); ?>"/>
+			<label for="title_product">Nazwa produktu:*</label>
+			<input type="text" name="title_product" id="title_product"  value="<?php echo $this->getData('title_product'); ?>"/>
 			
-			<label for="newpass">Nowe hasło:*</label>
-			<input type="password" name="newpass" id="newpass"  value="<?php echo $this->getData('newpass'); ?>"/>
+			<label for="description">Opis produktu:*</label>
+			<textarea name="description" id="description"  value="<?php echo $this->getData('description'); ?>"></textarea>
 			
-			<label for="newpass2">Powtórz nowe hasło:*</label>
-			<input type="password" name="newpass2" id="oldpass"  value="<?php echo $this->getData('newpass2'); ?>"/>
+			<label for="price">Podaj cenę (netto):*</label>
+			<input type="text" name="price" id="price"  value="<?php echo $this->getData('price'); ?>"/>
+			
 			<label><i>*Wymagane pola</i></label>
 			<br/><br/>
 			
-			<input type="Submit" name="submit" class="btn btn-primary" vlaue="Wyślij" />
+			<input type="Submit" name="submit" class="btn btn-primary" value="Dodaj produkt" />
 		
 		</form>	
 	</div>
