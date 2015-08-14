@@ -1,4 +1,8 @@
-<?php include("app/init.php") ?>
+<?php include("app/init.php");
+session_start();
+?>
+
+
 <!DOCTYPE  html>
 <html>
 <head>
@@ -32,18 +36,28 @@
 		<div class="content row">
 			
 			<div class="span9" id="left-c">
+			
 				<?php if($result = $SK->Database->query("SELECT * FROM products ORDER BY id DESC")): 
 					if($result->num_rows > 0):?>
 				<?php while($row = $result->fetch_object()): ?>
+				<form method="post" action="app/cart/cart.php">
+					
 					<h2><?php $SK->Product_list_title->display_block($row->id,'oneline'); ?></h2>
 				<hr />
 				<div class="well">
 					 
-					<?php $SK->Product_list_description->display_block($row->id); ?>
+					<?php $SK->Product_list_description->display_block($row->id,'oneline'); ?>
 					<label>Cena: <?php $SK->Product_list_price->display_block($row->id,'oneline'); ?>zł netto</label>
 					
-					<label></label>
+					<label>
+  						<label for="ex1">Ilość</label>
+  						<input type="text" size="2" maxlength="2" name="product_quantity" class="quantity_product" value="1" />
+					</label>
+					
+					<input type="hidden" name="product_id" value="<?php echo $row->id ?>" />
+					<input type="hidden" name="type" value="add" />
 					<input type="Submit" class="btn btn-succes" value="Dodaj Do koszyka" />
+			</form>
 			</div>
 			<?php endwhile; ?>
 			<?php endif;endif; ?>
@@ -53,7 +67,16 @@
 			
 			<div class="span3" id="right-c">
 				<div class="well right-content">
-					<b>Koszyk:</b>
+				
+				<?php 
+				$SK->cart_box();
+					if(isset($_SESSION["cart_products"]) && count($_SESSION["cart_products"])>0){
+					$SK->cart_link();
+					echo '<br /><br /><a href="app/cart/cart_clean.php">Wyczyść koszyk</a>';
+					}
+				 ?>
+			
+						
 				</div>
 				<div class="well right-content">
 					

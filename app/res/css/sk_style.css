@@ -154,6 +154,16 @@ textarea.textarea, textarea.wysiwyg {
 .nav-color li a {
 	color: #fff;
 }
+.quantity_product {
+	width: 25px;
+}
+.button_usun {
+	margin-bottom:10px;
+	}
+.button_koszyk{
+	margin-left: 27px;
+}
+
 
 
 

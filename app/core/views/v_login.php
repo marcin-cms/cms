@@ -21,6 +21,7 @@
 			});
 		});
 		
+		
 		$('#sk_cancel').live('click', function(e){
 			e.preventDefault();
 			

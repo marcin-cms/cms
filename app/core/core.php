@@ -46,7 +46,12 @@ class SK_Core{
 		}
 		if(isset($_GET['login']) && $this->Auth->checkLoginStatus() == FALSE) {
 			include(APP_PATH . "core/templates/t_login.php");
-		} 
+		}
+		if(isset($_GET['cart'])) {
+			include(APP_PATH . "core/templates/t_cart.php");
+			
+		}  
+		
 	}
 	
 	function toolbar(){
@@ -63,6 +68,13 @@ class SK_Core{
 		} else {
 			echo "<a href='?login' class='btn btn-success btn-large'>Zaloguj</a>";
 		}
+	}
+	function cart_box(){
+		include(APP_PATH . "cart/views/v_cart_box.php");
+	}
+	function cart_link(){
+		echo "<a href='?cart' class='button_koszyk btn btn-success'>Pokaż Koszyk</a>";
+		
 	}
 }
 
