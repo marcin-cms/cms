@@ -1,0 +1,334 @@
+﻿@font-face {
+	font-family: 'BebasNeue';
+	src: url('../fonts/bebas/BebasNeue.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body, html {
+	margin: 0 0 0 0;
+	position: relative;
+	background: #a0c75a;
+	font-family: Arial, Helvetica, sans-serif;
+}
+img {
+	border: none;
+}
+
+.wrapper {
+	width: 967px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.clear {
+	clear: both;
+}
+h2 {
+	padding: 0;
+	margin: 0 0 20px 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
+
+/* góra */
+
+#logo {
+	display: blok;
+	width: 341px;
+	height: 45px;
+	margin: 37px auto 25px 11px;
+	position: relative;
+	float: left;
+}
+
+img.logo{
+	width:265px;
+}
+
+#tlo_gora_gradient {
+	background: url(../img/tlo_gora_gradient.jpg) no-repeat;
+	width: 967px;
+	margin: 0 auto;
+	height: 79px;
+	position: relative;
+}
+#gora {
+	width:967px;
+	height: 116px;
+	background: #fff;
+}
+
+/* nawigacja */
+
+nav {
+	position:absolute;
+	top: -16px;
+	right: 20px;
+	
+}
+
+nav li {
+	list-style: none;
+	float: left;
+	position: relative;
+}
+nav li a {
+	padding:40px 28px 12px 28px;
+	text-decoration: none;
+	display: block;
+	text-transform: uppercase;
+	font-family: 'BebasNeue';
+	font-size: 24px;
+	color: #000;
+}
+nav li a:hover {
+	background: #4a914a;
+	color: #fff;
+	
+}
+
+/* banner */
+#baner {
+	height: 374px;
+	background: url(../img/tlo_banner.jpg) no-repeat;
+	}
+#baner p {
+	font-family: 'BebasNeue';
+}
+
+#baner #slogan_gora {
+	font-size: 60px;
+	color: #ffffff;
+	position: absolute;
+	top: 150px;
+	left: 452px;
+}
+
+#baner #slogan_dol {
+	font-size: 48px;
+	color: #4a914a;
+	position: absolute;
+	top: 230px;
+	left: 452px;
+}
+/* cienie góra */
+
+#cien_gora_lewy {
+	background: url(../img/cien_gora_lewy.jpg) no-repeat;
+	position: absolute;
+	width: 42px;
+	height: 690px;
+	top: 0;
+	left: -42px;
+}
+#cien_gora_prawy {
+	background: url(../img/cien_gora_prawy.jpg) no-repeat;
+	position: absolute;
+	width: 42px;
+	height: 690px;
+	top: 0;
+	left: 967px;
+}
+#cien_gora_dol {
+	background: url(../img/cien_banner_dol.jpg) no-repeat;
+	position: absolute;
+	width: 967px;
+	height: 31px;
+	top: 690px;
+	left: 0;
+}
+/* boxy góra */
+
+#boxy_gora {
+	height: 200px;
+}
+#box_gora_1 a{
+	position: absolute;
+	display: block;
+	width: 334px;
+	height: 200px;
+	left: 0;
+	background: url(../img/box_1.jpg) no-repeat;
+}
+#box_gora_2 a{
+	position: absolute;
+	display: block;
+	width: 300px;
+	height: 200px;
+	left: 334px;
+	background: url(../img/box_2.jpg) no-repeat;
+}
+#box_gora_3 a{
+	position: absolute;
+	display: block;
+	width: 334px;
+	height: 200px;
+	right: 0;
+	background: url(../img/box_3.jpg) no-repeat;
+}
+#box_gora_1 a:hover{
+	background: url(../img/box_1_hover.jpg) no-repeat;
+}
+#box_gora_2 a:hover{
+
+	background: url(../img/box_2_hover.jpg) no-repeat;
+}
+#box_gora_3 a:hover{
+	background: url(../img/box_3_hover.jpg) no-repeat;
+}
+
+/* główna zawartość */
+
+section {
+	background: #f7f7f7;
+	width:100%;
+}
+#zawartosc {
+	width: 900px;
+	padding: 30px;
+	margin: 0 auto;
+}
+
+/* artykuly */
+
+#artykuly {
+	background: #fff;
+	margin: 70px 0;
+	height: 299px;
+	border: 1px solid #eee;
+	position: relative;
+}
+
+#artykuly article {
+	width: 207px;
+	height: 210px;
+	margin: 24px 0;
+	float: left;
+	position: relative;
+	padding: 24px 5% 0 5%;
+}
+
+#drugi_art {
+	border-right: 1px solid #f2f2f2;
+	border-left: 1px solid #f2f2f2;
+}
+
+#artykuly article p {
+	height: 130px;
+	color: #707070;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 22px;
+}
+
+#artykuly article footer a {
+	background: #418f30;
+	color: #fff;
+	text-decoration: none;
+	position: absolute;
+	top: 240px;
+	right: 90px;
+	font-size: 12px;
+	padding: 10px 20px 10px 20px;
+	border: none;
+}
+
+#artykuly article footer a:hover {
+	background: #a0c75a;
+	}
+#cien_artykuly {
+	background:url(../img/cien_artykuly_dol.jpg) no-repeat;
+	position: absolute;
+	width: 900px;
+	height: 31px;
+	top: 299px;
+	left: 0;
+}
+
+/* popularne filmy */
+
+#popularne_filmy a{
+	display: block;
+	position: relative;
+	width: 275px;
+	height: 135px;
+	float: left;
+	margin: 36px 36px 0 36px;
+	box-shadow: 0 0 3px 0 rgba(0,0,0,0.3)
+}
+
+#popularne_filmy a:nth-of-type(3n+1) {
+	margin: 36px 0 0 0;
+}
+#popularne_filmy a:nth-of-type(3n) {
+	margin: 36px 0 0 0;
+}
+
+#popularne_filmy a:hover {
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+}
+/* stopka */
+
+#stopka {
+	background: #fff;
+	width: 100%;
+	height: 330px;
+}
+#zawartosc_stopki {
+	width: 900px;
+	padding: 0 30px;
+	position: relative;
+	margin: 0 auto;
+}
+#stopka div > div {
+	float: left;
+	width: 180px;
+}
+
+#kursy, #pomoc, #kontakt {
+	margin-left: 60px;
+}
+
+#stopka ul {
+	list-style: none;
+	padding-left: 0;
+	
+}
+
+#stopka ul li {
+	padding: 5px 0;
+	font-size: 12px;
+}
+
+#stopka ul li a {
+	text-decoration: none;
+	color: #707070;
+}
+#stopka ul li a:hover { 
+	color: #418f30;
+}
+
+#stopka #kontakt a {
+	color: #418f30;
+}
+#stopka h3 {
+	margin: 45px 0 25px  0;
+	font-family: 'BebasNeue';
+	font-weight: normal;
+}
+
+#dol_strony {
+	width: 100%;
+	background: #a0c75a;
+	height: 65px;
+}
+
+#dol_strony p {
+	width:400px;
+	margin: 20px auto;
+	font-size: 12px;
+	color: #fff;
+	
+}

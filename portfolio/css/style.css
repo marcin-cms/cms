@@ -1,0 +1,420 @@
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/Raleway-Light.ttf') format('opentype');
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/Raleway-Bold.ttf') format('opentype');
+  font-style: normal;
+  font-weight: 700;
+}
+body, html {
+	margin: 0;
+	position: relative;
+	background: #fdfdfd;
+	font-family: 'Raleway', sans-serif;
+	
+}
+img {
+	border: none;
+}
+/*gora */
+#gora {
+	width:1000px;
+	height: 455px;
+	margin: 0 auto;
+}
+#gora_lewa {
+	float:left;
+	height: 455px;
+	width:auto;
+}
+
+#logo_czarne {
+	float:left;
+	width:341px;
+	height: 45px;
+}
+#logo_czarne img {
+	margin-top: 40px;
+	
+}
+#gora_prawa {
+	float:right;
+	height: 455px;
+	width: auto;
+	text-align: right;
+}
+#gora_prawa img {
+	height: 455px;
+}
+#napis_wiekszy {
+	font-family: 'Raleway';
+	font-weight: 300;
+	color: #00088;
+	font-size: 42px;
+	line-height: 42px;
+	margin-top: 220px;
+	
+	padding: 0;
+}
+#napis_wiekszy p {
+	margin: 0;
+}
+#napis_mniejszy {
+	margin-top: 50px;
+	font-family: 'Raleway';
+	color: #666666;
+	font-weight: 300;
+	font-size: 17px;
+}
+#gora_kreska {
+	float: left;
+	width: 20px;
+	height: 1px;
+	background: url('../img/kreska_gora.png') no-repeat;
+}
+/*menu */
+
+#menu-background {
+	width: 100%;
+	height: 69px;
+	background: #000;
+}
+#container-menu {
+	width:1000px;
+	height: 69px;
+	margin: 0 auto;
+}
+#logo_biale {
+	float:left;
+	width:341px;
+	height: 32px;
+}
+#logo_biale img {
+	margin-top: 18.5px;
+	
+}
+#naglowek_menu {
+	float: right;
+	height: 16px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#naglowek_menu li {
+	float: left;
+	height: 16px;
+	margin-right: 3px;
+	margin-top: 26.5px;
+}
+#naglowek_menu li:last-child {
+	margin-right: 40px;
+}
+#naglowek_menu li  a {
+	float: left;
+	font-family: 'Raleway';
+	font-size: 16px;
+	font-weight: 700;
+	height: 16px;
+	line-height: 16px;
+	color: #fff;
+	text-decoration: none;
+	padding: 0 10px;
+}
+#naglowek_menu li  a:hover {
+	color: #158483;
+}
+/* O mnie */
+
+#omnie-background {
+	background: #edecec;
+	width:100%;
+	height: 400px;
+}
+#container-omnie {
+	width:1000px;
+	height: 400px;
+	margin: 0 auto;
+}
+#omnie_lewa{
+	float:left;
+	width:500px;
+}
+#tytul_omnie h1{
+	margin-top: 40px;
+	font-family: 'Raleway';
+	font-size: 30px;
+	font-weight: 700;
+}
+#tresc_omnie {
+	margin-top: 30px;
+	font-family: 'Raleway';
+	font-size: 17px;
+	font-weight: 300;
+	color: #5f5e5e;
+}
+#tresc_omnie p {
+	padding: 0;
+	margin: 10px;
+}
+#omnie_prawa{
+	float:right;
+	width:500px;
+	margin: auto 0;
+}
+#slider_omnie {
+	position: postion;
+	margin-left: 60px;
+	margin-top: 40px;
+	height: 329px;
+	width: 450px;
+	border: 2px solid #000;
+	box-shadow: 0 0 8px 2px #000;
+}
+#strzalka_lewa {
+	position: absolute;
+	margin-left: 35px;
+	margin-top: 170px;
+	width: 51px;
+	height: 51px;
+	box-shadow: 0 0 8px 2px #000;
+}
+#strzalka_prawa {
+	position: absolute;
+	margin-left: 490px;
+	margin-top: 170px;
+	width: 51px;
+	height: 51px;
+	box-shadow: 0 0 8px 2px #000;
+}
+/* wykonanie tytuł */
+#wykonanie-container {
+	width:1000px;
+	margin: 0 auto;
+}
+#wykonanie-background{
+	background: #fdfdfd;
+	width:100%;
+	height: 100%;
+}
+#tytul-wykonanie h1 {
+	margin-top: 20px;
+	font-family: 'Raleway';
+	font-size: 30px;
+	font-weight: 700;
+}
+/* prawa strona pracy */
+#praca-container-prawa {
+	width:100%;
+	height: 500px;
+}
+
+#praca-container-prawa .praca-lewa {
+	float:left;
+	width: 500px;
+}
+#praca-container-prawa .praca-lewa img {
+	float:left;
+	width: auto;
+	height: 440px;
+	margin-top: 5px;
+	margin-left: 50px;
+	box-shadow: 0 0 10px 5px #000;
+}
+#praca-container-prawa .praca-lewa img:hover {
+	opacity: 0.5;
+}
+#praca-container-prawa .praca-prawa {
+	float:right;
+	width: 500px;
+}
+#praca-container-prawa .praca-prawa h2{
+	font-family: 'Raleway';
+	font-size: 18px;
+	font-weight: 700;
+	color: #158483;
+	text-align: center;
+}
+#praca-container-prawa .praca-prawa p{
+	margin-top: 40px;
+	margin-bottom: 25px;
+}
+#lista-wykonane li{
+	margin-top: 15px;
+}
+#praca-container-prawa .przycisk-wiecej-prawa a {
+	background: url('../img/przycisk-wiecej.png') no-repeat;
+	text-align: center;
+	margin-top:20px;
+	width: 157px;
+	height: 60px;
+	float: right;
+	margin-right: 171.5px;
+}
+#praca-container-prawa .przycisk-wiecej-prawa a:hover {
+	background: url('../img/przycisk-wiecej-hover.png') no-repeat;
+}
+/* lewa strona pracy */
+#praca-container-lewa {
+	width:100%;
+	height: 500px;
+}
+#praca-container-lewa .praca-lewa {
+	float:left;
+	width: 500px;
+}
+#praca-container-lewa .praca-lewa h2{
+	font-family: 'Raleway';
+	font-size: 18px;
+	font-weight: 700;
+	color: #158483;
+	text-align: center;
+}
+#praca-container-lewa .praca-lewa p{
+	margin-top: 40px;
+	margin-bottom: 25px;
+}
+#praca-container-lewa .przycisk-wiecej-lewa a {
+	background: url('../img/przycisk-wiecej.png') no-repeat;
+	text-align: center;
+	margin-top:20px;
+	width: 157px;
+	height: 60px;
+	float: left;
+	margin-left: 171.5px;
+}
+#praca-container-lewa .przycisk-wiecej-lewa a:hover {
+	background: url('../img/przycisk-wiecej-hover.png') no-repeat;
+}
+#praca-container-lewa .praca-prawa {
+	float:right;
+	width: 500px;
+}
+#praca-container-lewa .praca-prawa img{
+	float:right;
+	width: auto;
+	height: 440px;
+	margin-top: 5px;
+	margin-right: 50px;
+	box-shadow: 0 0 10px 5px #000;
+}
+#praca-container-lewa .praca-prawa img:hover {
+	opacity: 0.5;
+}
+/* Kontakt */
+
+#kontakt-background{
+	background: #116a69;
+	width:100%;
+	height: 470px;
+}
+#kontakt-container {
+	width:1000px;
+	margin: 0 auto;
+}
+#kontakt-lewa {
+	width:500px;
+	float:left;
+}
+#kontakt-lewa h1{
+	font-size: 30px;
+	color: #fff;
+	font-family: 'Raleway';
+	font-weight: 700;
+}
+#kontakt-lewa p{
+	font-size: 16px;
+	font-family: 'Raleway';
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
+	color: #1c1c1c;
+}
+#kontakt-lewa p:nth-child(3){
+	margin-top: 50px;
+}
+#kontakt-lewa p:nth-child(5){
+	margin-top: 30px;
+}
+.tytul-biale {
+	color: #fff;
+	font-weight: 700;
+}
+#kontakt-prawa {
+	width:500px;
+	float:left;
+}
+#kontakt-prawa form{
+	margin-top: 30px;
+	margin-left: 20px;
+}
+#kontakt-prawa form p{
+	font-size: 16px;
+	font-family: 'Raleway';
+	font-weight: 700;
+	color: #fff;
+	margin-bottom:5px;
+	padding: 0;
+}
+#kontakt-prawa .input-text {
+	background: #277776;
+	border: 0;
+	font-size: 18px;
+	font-weight: 600;
+	font-family: 'Raleway';
+	color: #fff;
+	height: 46px;
+	width: 400px;
+}
+#kontakt-prawa input[type=text]{
+	width: 400px;
+	padding: 0 0 0 15px;
+}
+#kontakt-prawa .textarea {
+	background: #277776;
+	border: 0;
+	font-size: 14px;
+	font-weight: 600;
+	font-family: 'Raleway';
+	color: #fff;
+}
+#kontakt-prawa textarea{
+	width: 400px;
+	padding: 10px 0 0 10px;
+}
+.przycisk-wyslij  {
+	background: url('../img/przycisk-kontakt.png') no-repeat;
+	width:185px;
+	height: 56px;
+	margin-top: 10px;
+	float: left;
+	border: 0;
+}
+input[type="submit"]:hover{
+    background: url('../img/przycisk-kontakt-hover.png') no-repeat;
+}
+/* Copyright */
+#copyright-background {
+	background: #000;
+	width:100%;
+	height: 40px;
+}
+#copyright-container {
+	width: 100%;
+	background: #000;
+	height: 40px;
+	padding-top: 10px;
+	margin: 0 auto:
+}
+#copyright-container p {
+	color: #fff;
+	font-size: 14px;
+	font-family: 'Raleway';
+	font-weight: 600;
+	width: 1000px;
+	margin: 5px auto 0 auto;
+}
+
